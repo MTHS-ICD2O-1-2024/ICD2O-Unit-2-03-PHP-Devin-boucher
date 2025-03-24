@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The Hello World program, in PHP" />
+  <meta name="description" content="Street Number and Name Program, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Mr. Coxall" />
+  <meta name="author" content="Devin Boucher" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>The Hello World program,in PHP</title>
+  <title>Street Number and Name Program, in PHP</title>
 </head>
 
 <body>
@@ -22,20 +22,20 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The Hello World program, in PHP</span>
+        <span class="mdl-layout-title">Street Number and Name Program, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/street.jpg" alt="laptop image" width="250" />
+        <img src="./images/street.jpg" alt="street image" width="250" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $name = $_GET["name"];
-          $age = $_GET["age"];
+          $street_number = $_GET["street_number"];
+          $street_name = $_GET["street_name"];
 
-          echo "<p>Your info is: " . $name . ", age " . $age . ".</p>";
+          echo "<p>Your address is: " . $street_number . " " . $street_name . ".</p>";
           ?>
         </div>
       </div>
